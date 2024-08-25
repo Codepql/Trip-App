@@ -8,7 +8,7 @@
     <router-link to="/message">消息</router-link> -->
 
     <!-- 使用组件库vant -->
-    <van-tabbar v-model="curryIndex" active-color="#ff9854">
+    <van-tabbar v-model="curryIndex" active-color="#ff9854" :route="true">
       <van-tabbar-item to="/home">
         <!-- 自定义图标 -->
         <span>首页</span>
@@ -17,8 +17,8 @@
         </template>
       </van-tabbar-item>
       <van-tabbar-item to="/favor" icon="shop-o">收藏</van-tabbar-item>
-      <van-tabbar-item to="order" icon="cart-o">订单</van-tabbar-item>
-      <van-tabbar-item to="message" icon="chat-o">消息</van-tabbar-item>
+      <van-tabbar-item to="/order" icon="cart-o">订单</van-tabbar-item>
+      <van-tabbar-item to="/message" icon="chat-o">消息</van-tabbar-item>
     </van-tabbar>
 
   </div>

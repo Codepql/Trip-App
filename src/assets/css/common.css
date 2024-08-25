@@ -1,10 +1,40 @@
 :root {
   --primary-color: #ff9854;
+  --line-color: #faf8f9;
+  --theme-linear-gradient: linear-gradient(90deg, #fa8c1d, #fcaf3f);
 
   /* 全局修改变量 */
   /* --van-tabbar-item-icon-size: 20px; */
 
+  /* 全局修改search-icon */
+  --van-search-left-icon-color: var(--primary-color) !important;
+
+  --van-primary-color:var(--primary-color)
 }
+
 body {
   font-size: 14px;
+}
+
+/* 隐藏导航栏 */
+.top-page {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  background-color: #fff;
+
+  overflow-y: auto;
+}
+
+/* 分割线 */
+.bottom-gray-line {
+  border-bottom: 1px solid var(--line-color);
+}
+
+/* √ 图标 */
+.icon_check {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/right_icon.png) 35px 25px / 267% ;
 }

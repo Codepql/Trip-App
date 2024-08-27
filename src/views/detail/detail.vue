@@ -13,6 +13,8 @@
       <detail-infos :top-infos="mainPart.topModule"/>
       <detail-facility :house-facility="mainPart.dynamicModule.facilityModule.houseFacility"/>
       <detail-landlord :landlord="mainPart.dynamicModule.landlordModule"/>
+      <detail-comment :comment="mainPart.dynamicModule.commentModule"/>
+      <detail-notice :orderRules="mainPart.dynamicModule.rulesModule"/>
     </div>
   </div>
 </template>
@@ -26,6 +28,8 @@ import DetailSwipe from './cpns/detail_01_swipe.vue';
 import DetailInfos from './cpns/detail_02_infos.vue';
 import DetailFacility from './cpns/detail_03_facility.vue'
 import DetailLandlord from './cpns/detail_04_landlord.vue';
+import DetailComment from './cpns/detail_05_comment.vue';
+import DetailNotice from './cpns/detail_06_notice.vue';
 
 
 

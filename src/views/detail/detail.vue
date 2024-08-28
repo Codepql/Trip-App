@@ -15,7 +15,7 @@
       <detail-landlord :landlord="mainPart.dynamicModule.landlordModule"/>
       <detail-comment :comment="mainPart.dynamicModule.commentModule"/>
       <detail-notice :orderRules="mainPart.dynamicModule.rulesModule"/>
-      <detail-map :position="mainPart.dynamicModule.positionModule"/>
+      <!-- <detail-map :position="mainPart.dynamicModule.positionModule"/> -->
     </div>
   </div>
 </template>
@@ -31,7 +31,7 @@ import DetailFacility from './cpns/detail_03_facility.vue'
 import DetailLandlord from './cpns/detail_04_landlord.vue';
 import DetailComment from './cpns/detail_05_comment.vue';
 import DetailNotice from './cpns/detail_06_notice.vue';
-import DetailMap from './cpns/detail_07_map.vue';
+// import DetailMap from './cpns/detail_07_map.vue';
 
 
 

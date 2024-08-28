@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="map">
     <detail-section title="位置周边" more-text="查看更多周边信息">
       <div class="baidu" ref="mapRef">百度地图</div>
@@ -36,4 +36,4 @@ onMounted(() => {
 .baidu {
   height: 300px;
 }
-</style>
+</style> -->

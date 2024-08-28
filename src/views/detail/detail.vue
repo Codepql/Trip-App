@@ -16,6 +16,7 @@
       <detail-comment :comment="mainPart.dynamicModule.commentModule"/>
       <detail-notice :orderRules="mainPart.dynamicModule.rulesModule"/>
       <detail-map :position="mainPart.dynamicModule.positionModule"/>
+      <detail_08_buy/>
     </div>
   </div>
 </template>
@@ -32,6 +33,7 @@ import DetailLandlord from './cpns/detail_04_landlord.vue';
 import DetailComment from './cpns/detail_05_comment.vue';
 import DetailNotice from './cpns/detail_06_notice.vue';
 import DetailMap from './cpns/detail_07_map.vue';
+import detail_08_buy from './cpns/detail_08_buy.vue';
 
 
 

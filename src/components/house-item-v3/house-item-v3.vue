@@ -6,7 +6,7 @@
       </div>
       <div class="info">
         <div class="location">
-          <img src="@/assets/img/location_on_icon.png" alt="">
+          <img src="@/assets/img/home/location_on_icon.png" alt="">
           <span>{{ houseData.location }}</span>
         </div>
         <div class="name">{{ houseData.houseName }}</div>

@@ -15,7 +15,7 @@
     </div>
     <div class="right">
       <i class="icon-search">
-        <img src="@/assets/img/icon_search.webp" alt="">
+        <img src="@/assets/img/serach/icon_search.webp" alt="">
       </i>
     </div>
   </div>

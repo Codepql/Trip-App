@@ -2,7 +2,7 @@
   <div class="home">
     <home-nav-bar/>
     <div class="banner">
-      <img src="@/assets/img/banner.png" alt="">
+      <img src="@/assets/img/home/banner.png" alt="">
     </div>
     <home-search-box />
     <home-categories/>

@@ -1,5 +1,12 @@
 <template>
   <div class="detail">
+    <div class="tab-control">
+      <van-tabs v-model:active="active" scrollspy sticky>
+        <van-tab v-for="index in ['abc', 'cba', 'nba', 'bca', 'bba']" :title="index">
+          {{ index }}
+        </van-tab>
+      </van-tabs>
+    </div>
     <div class="nav-bar">
       <van-nav-bar
         title="房屋详情"
@@ -16,7 +23,11 @@
       <detail-comment :comment="mainPart.dynamicModule.commentModule"/>
       <detail-notice :orderRules="mainPart.dynamicModule.rulesModule"/>
       <detail-map :position="mainPart.dynamicModule.positionModule"/>
-      <detail_08_buy/>
+      <detail-intro :priceIntro="mainPart.introductionModule"/>
+    </div>
+    <div class="footer">
+      <img src="@/assets/img/detail/icon_ensure.webp" alt="">
+      <div class="text">念转旅途，永无止境！</div>
     </div>
   </div>
 </template>
@@ -33,7 +44,7 @@ import DetailLandlord from './cpns/detail_04_landlord.vue';
 import DetailComment from './cpns/detail_05_comment.vue';
 import DetailNotice from './cpns/detail_06_notice.vue';
 import DetailMap from './cpns/detail_07_map.vue';
-import detail_08_buy from './cpns/detail_08_buy.vue';
+import DetailIntro from './cpns/detail_08_intro.vue';
 
 
 
@@ -58,5 +69,24 @@ const onClickLeft = () => {
 </script>
 
 <style lang="less" scoped>
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+
+  img {
+    width: 123px;
+  }
+
+  .text {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #7688a7;
+  }
+}
 
 </style>

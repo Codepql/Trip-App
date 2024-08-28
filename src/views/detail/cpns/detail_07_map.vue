@@ -34,6 +34,6 @@ onMounted(() => {
 
 <style lang="less" scoped>
 .baidu {
-  height: 300px;
+  height: 250px;
 }
 </style>

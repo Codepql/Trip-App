@@ -5,7 +5,7 @@
       <div class="city" @click="cityClick">{{ currentCity.cityName }}</div>
       <div class="position" @click="positionClick">
         <span class="text">我的位置</span>
-        <img src="@/assets/img/icon_location.png" alt="">
+        <img src="@/assets/img/home/icon_location.png" alt="">
       </div>
     </div>
 

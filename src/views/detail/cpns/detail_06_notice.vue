@@ -27,4 +27,25 @@ defineProps({
 
 <style lang="less" scoped>
 
+.notice-inner {
+  height: 150px;
+  font-size: 10px;
+
+  .item {
+    display: flex;
+    padding: 9px;
+
+    .title {
+      width: 80px;
+    }
+
+    .text {
+      flex: 1;
+    }
+    .tip {
+      width: 40px;
+    }
+  }
+}
+
 </style>

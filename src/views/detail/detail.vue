@@ -15,7 +15,7 @@
       <detail-landlord :landlord="mainPart.dynamicModule.landlordModule"/>
       <detail-comment :comment="mainPart.dynamicModule.commentModule"/>
       <detail-notice :orderRules="mainPart.dynamicModule.rulesModule"/>
-      <!-- <detail-map :position="mainPart.dynamicModule.positionModule"/> -->
+      <detail-map :position="mainPart.dynamicModule.positionModule"/>
     </div>
   </div>
 </template>

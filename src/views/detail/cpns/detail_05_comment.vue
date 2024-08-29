@@ -22,7 +22,6 @@
             </template>
           </div>
         </div>
-
         <div class="tags">
           <template v-for="(item, index) in comment.commentTagVo" :key="index">
             <span class="item" 
@@ -31,7 +30,6 @@
             </span>
           </template>
         </div>
-
         <div class="content">
           <div class="user">
             <div class="avatar">
@@ -46,7 +44,6 @@
             {{ comment.comment.commentDetail }}
           </div>
         </div>
-
       </div>
     </detail-section>
   </div>
@@ -65,4 +62,38 @@ defineProps({
 
 <style lang="less" scoped>
 
+.comment {
+
+  .header {
+    display:flex;
+    margin-top: 8px;
+
+    .left {
+      flex: 1;
+      
+    }
+
+    .right {
+      width: 50%;
+    }
+  }
+
+  .tags {
+    // width: 200px;
+    margin: 16px 0;
+
+    span {
+      margin-bottom: 10px;
+    }
+
+    .item {
+      color: #999;
+      margin-right: 20px;
+
+      border-radius: 6px;
+      background-color: #ece8e8;
+    }
+
+  }
+}
 </style>

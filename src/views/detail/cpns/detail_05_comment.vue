@@ -69,31 +69,94 @@ defineProps({
     margin-top: 8px;
 
     .left {
-      flex: 1;
-      
+      display: flex;
+      width: 50%;
+
+      .text {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 40px;
+      }
+
+      .line {
+        border-bottom: 6px solid #ff9854;
+        border-radius: 5px;
+      }
+
+      .info {
+        margin-left: 12px;
+
+        .count {
+          font-size: 12px;
+          color: #999;
+          margin: 2px 0;
+        }
+      }
+
     }
 
     .right {
-      width: 50%;
+      flex: 1;
+      
+      .item {
+        color: #666;
+        padding-right: 5px;
+      }
     }
   }
 
   .tags {
-    // width: 200px;
+
+    line-height: 22px;
     margin: 16px 0;
 
-    span {
-      margin-bottom: 10px;
-    }
 
     .item {
       color: #999;
       margin-right: 20px;
 
+      box-sizing: border-box;
+
       border-radius: 6px;
-      background-color: #ece8e8;
+      background-color: #eee;
     }
 
+  }
+
+  .content {
+
+    .user {
+      display: flex;
+      margin-bottom: 20px;
+
+      .avatar {
+        margin-right: 8px;
+
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+      }
+
+      .profile {
+
+        .name {
+          font-weight: 600;
+          padding-bottom: 3px;
+        }
+
+        .data {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+
+    .text {
+      color: #666;
+      line-height: 20px;
+    }
   }
 }
 </style>
